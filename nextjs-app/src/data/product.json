@@ -1,43 +1,25 @@
 [
   {
-    "products": [
-      {
-        "id": "product1",
-        "name": "Vanilla Ice Cream",
-        "description": "Creamy and delicious vanilla ice cream",
-        "price": 3.99,
-        "images": "https://example.com/vanilla.jpg",
-        "size": "200g"
-      },
-      {
-        "id": "product2",
-        "name": "Chocolate Fudge Brownie",
-        "description": "Indulgent chocolate fudge brownie with chunks of chocolate",
-        "price": 4.99,
-        "images": "https://example.com/brownie.jpg"
-      },
-      {
-        "id": "product3",
-        "name": "Strawberry Sorbet",
-        "description": "Refreshing and fruity strawberry sorbet",
-        "price": 2.99,
-        "images": "https://example.com/sorbet.jpg",
-        "size": "500g"
-      }
-    ],
-    "users": [
-      {
-        "id": "user1",
-        "name": "John Doe",
-        "email": "john@example.com",
-        "password": "password123"
-      },
-      {
-        "id": "user2",
-        "name": "Jane Smith",
-        "email": "jane@example.com",
-        "password": "securepassword"
-      }
-    ]
+    "id": "product1",
+    "name": "Vanilla Ice Cream",
+    "description": "Creamy and delicious vanilla ice cream",
+    "price": 3.99,
+    "images": "https://example.com/vanilla.jpg",
+    "size": "200g"
+  },
+  {
+    "id": "product2",
+    "name": "Chocolate Fudge Brownie",
+    "description": "Indulgent chocolate fudge brownie with chunks of chocolate",
+    "price": 4.99,
+    "images": "https://example.com/brownie.jpg"
+  },
+  {
+    "id": "product3",
+    "name": "Strawberry Sorbet",
+    "description": "Refreshing and fruity strawberry sorbet",
+    "price": 2.99,
+    "images": "https://example.com/sorbet.jpg",
+    "size": "500g"
   }
 ]
