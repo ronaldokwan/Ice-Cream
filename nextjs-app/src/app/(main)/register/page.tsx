@@ -10,7 +10,7 @@ export default function Register() {
     const username = formData.get("username");
     const email = formData.get("email");
     const password = formData.get("password");
-    console.log(name, username, email, password);
+    console.log(name, username, email, password); //null
     const res = await fetch("http://localhost:3000/api/register", {
       cache: "no-store",
       method: "POST",
