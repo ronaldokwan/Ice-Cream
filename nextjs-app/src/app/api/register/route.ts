@@ -1,8 +1,7 @@
 import User from "@/db/models/user";
-import { parse } from "path";
 import { z } from "zod";
 
-export default async function POST(request: Request) {
+export async function POST(request: Request) {
   try {
     const body = await request.json();
     const { name, username, email, password } = body;
@@ -28,21 +27,21 @@ export default async function POST(request: Request) {
       { status: 201 }
     );
   } catch (error) {
-    if (error instanceof Error) {
-      return Response.json(
-        { error: error.message, message: "POST register failed" },
-        { status: 400 }
-      );
-    }
     if (error instanceof z.ZodError) {
       return Response.json(
         { error: error.issues[0].message, message: "POST register failed" },
         { status: 400 }
       );
+    } else if (error instanceof Error) {
+      return Response.json(
+        { error: error.message, message: "POST register failed" },
+        { status: 400 }
+      );
+    } else {
+      return Response.json(
+        { error, message: "Internal Server Error" },
+        { status: 500 }
+      );
     }
-    return Response.json(
-      { error, message: "Internal Server Error" },
-      { status: 500 }
-    );
   }
 }

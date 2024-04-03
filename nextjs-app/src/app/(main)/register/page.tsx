@@ -1,13 +1,37 @@
 import Link from "next/link";
+import { Register } from "@/types";
+import { redirect } from "next/navigation";
 
-export default function Login() {
+export default function Register() {
+  async function registerAction(formData: FormData) {
+    "use server";
+
+    const name = formData.get("name");
+    const username = formData.get("username");
+    const email = formData.get("email");
+    const password = formData.get("password");
+    console.log(name, username, email, password);
+    const res = await fetch("http://localhost:3000/api/register", {
+      cache: "no-store",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, username, email, password }),
+    });
+    // const result = await res.json();
+    if (!res.ok) {
+      return redirect("/register?error=");
+    }
+    return redirect("/login");
+  }
   return (
     <div className="min-h-screen flex items-center justify-center w-full dark:bg-gray-950">
       <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg px-8 py-6 max-w-md">
         <h1 className="text-2xl font-bold text-center mb-4 dark:text-gray-200">
           Welcome Back!
         </h1>
-        <form action="#">
+        <form action={registerAction}>
           <div className="mb-4">
             <label
               className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
