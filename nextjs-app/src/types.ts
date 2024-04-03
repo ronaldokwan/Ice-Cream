@@ -1,17 +1,34 @@
-// Product Data
-interface Product {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  images: string;
-  size: "100g" | "200g" | "500g";
-}
+import { ObjectId } from "mongodb";
 
 // User Data
 interface User {
-  id: string;
-  name: string;
-  email: string;
-  password: string;
+  _id?: ObjectId;
+  name?: string;
+  username?: string;
+  email?: string;
+  password?: string;
+}
+
+// Product Data
+interface Product {
+  _id?: string;
+  name?: string;
+  slug?: string;
+  description?: string;
+  excerpt?: string;
+  price?: number;
+  tags?: string[];
+  thumbnail?: string;
+  images?: string[];
+  createdAt?: string;
+  updatedAt?: string;
+}
+
+// Wishlist Data
+interface Wishlist {
+  _id?: string;
+  userId?: User;
+  productId?: string;
+  createdAt?: string;
+  updatedAt?: string;
 }
