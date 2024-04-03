@@ -11,12 +11,42 @@ export default function Login() {
           <div className="mb-4">
             <label
               className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+              htmlFor="name"
+            >
+              Name
+            </label>
+            <input
+              className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-white"
+              id="name"
+              placeholder="name"
+              required
+              type="name"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+              htmlFor="username"
+            >
+              Username
+            </label>
+            <input
+              className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-white"
+              id="username"
+              placeholder="username"
+              required
+              type="username"
+            />
+          </div>
+          <div className="mb-4">
+            <label
+              className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
               htmlFor="email"
             >
               Email Address
             </label>
             <input
-              className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
+              className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-white"
               id="email"
               placeholder="your@email.com"
               required
@@ -31,85 +61,27 @@ export default function Login() {
               Password
             </label>
             <input
-              className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
+              className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-white"
               id="password"
               placeholder="Enter your password"
               required
               type="password"
-            />{" "}
-            <div className="mb-4">
-              <label
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                htmlFor="email"
-              >
-                Email Address
-              </label>
-              <input
-                className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
-                id="email"
-                placeholder="your@email.com"
-                required
-                type="email"
-              />
-            </div>{" "}
-            <div className="mb-4">
-              <label
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                htmlFor="email"
-              >
-                Email Address
-              </label>
-              <input
-                className="shadow-sm rounded-md w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 text-black"
-                id="email"
-                placeholder="your@email.com"
-                required
-                type="email"
-              />
-            </div>
-            <a
-              className="text-xs text-gray-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              href="#"
-            >
-              Forgot Password?
-            </a>
+            />
           </div>
           <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center">
-              <input
-                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 focus:outline-none"
-                defaultChecked
-                id="remember"
-                type="checkbox"
-              />
-              <label
-                className="ml-2 block text-sm text-gray-700 dark:text-gray-300"
-                htmlFor="remember"
-              >
-                Remember me
-              </label>
-            </div>
-            <a
+            <Link
               className="text-xs text-indigo-500 hover:text-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              href="#"
+              href="/login"
             >
-              Create Account
-            </a>
+              Back to login
+            </Link>
           </div>
           <button
             className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             type="submit"
           >
-            Login
+            register
           </button>
-          <Link
-            href="/login"
-            scroll={false}
-            className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            type="submit"
-          >
-            Back to Login
-          </Link>
         </form>
       </div>
     </div>

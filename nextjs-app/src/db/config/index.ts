@@ -9,6 +9,6 @@ const client = new MongoClient(uri, {
   },
 });
 
-const db = client.db("youtube");
+const db = client.db("E-Commerce");
 
 export { db };

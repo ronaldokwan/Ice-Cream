@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Login() {
   return (
     <div className="min-h-screen flex items-center justify-center w-full dark:bg-gray-950">
@@ -35,34 +37,14 @@ export default function Login() {
               required
               type="password"
             />
-            <a
-              className="text-xs text-gray-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              href="#"
-            >
-              Forgot Password?
-            </a>
           </div>
           <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center">
-              <input
-                className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 focus:outline-none"
-                defaultChecked
-                id="remember"
-                type="checkbox"
-              />
-              <label
-                className="ml-2 block text-sm text-gray-700 dark:text-gray-300"
-                htmlFor="remember"
-              >
-                Remember me
-              </label>
-            </div>
-            <a
+            <Link
               className="text-xs text-indigo-500 hover:text-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              href="#"
+              href="/register"
             >
               Create Account
-            </a>
+            </Link>
           </div>
           <button
             className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
