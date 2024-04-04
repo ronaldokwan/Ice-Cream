@@ -1,13 +1,7 @@
-import type { Metadata } from "next";
 import { Product } from "@/types";
 import ProductCard from "@/components/ProductCard";
 import { ObjectId } from "mongodb";
 import Link from "next/link";
-
-export const meta: Metadata = {
-  title: "E-Commerce",
-  description: "E-Commerce Ice Cream Shop",
-};
 
 export default async function Home() {
   const products: Product[] = [

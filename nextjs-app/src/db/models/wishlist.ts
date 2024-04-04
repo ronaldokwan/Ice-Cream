@@ -11,8 +11,8 @@ class Wishlist {
   static async create(body: wishlist) {
     const { productId, userId } = body;
     const result = await this.wishlistCollection().insertOne({
-      productId: new ObjectId(productId),
-      userId: new ObjectId(userId),
+      productId,
+      userId,
     });
     return {
       _id: result.insertedId,
