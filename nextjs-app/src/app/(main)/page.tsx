@@ -1,7 +1,7 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { Product } from "@/types";
 import { getProduct } from "@/actions/products";
+import ProductCard from "@/components/ProductCard";
 
 export const meta: Metadata = {
   title: "E-Commerce",
@@ -9,12 +9,15 @@ export const meta: Metadata = {
 };
 
 export default async function Home() {
-  const products: Product = await getProduct();
+  const products = await getProduct();
+
   return (
-    <>
-      <Link href="/login">
-        <h1>Login</h1>
-      </Link>
-    </>
+    <div className="container mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {products.data.map((product: Product) => (
+          <ProductCard key={product._id.toString()} product={product} />
+        ))}
+      </div>
+    </div>
   );
 }
