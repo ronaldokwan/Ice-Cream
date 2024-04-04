@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Register } from "@/types";
 import { redirect } from "next/navigation";
 
 export default function Register() {
@@ -10,7 +9,6 @@ export default function Register() {
     const username = formData.get("username");
     const email = formData.get("email");
     const password = formData.get("password");
-    console.log(name, username, email, password); //null
     const res = await fetch("http://localhost:3000/api/register", {
       cache: "no-store",
       method: "POST",
@@ -45,6 +43,7 @@ export default function Register() {
               placeholder="name"
               required
               type="name"
+              name="name"
             />
           </div>
           <div className="mb-4">
@@ -60,6 +59,7 @@ export default function Register() {
               placeholder="username"
               required
               type="username"
+              name="username"
             />
           </div>
           <div className="mb-4">
@@ -75,6 +75,7 @@ export default function Register() {
               placeholder="your@email.com"
               required
               type="email"
+              name="email"
             />
           </div>
           <div className="mb-4">
@@ -90,6 +91,7 @@ export default function Register() {
               placeholder="Enter your password"
               required
               type="password"
+              name="password"
             />
           </div>
           <div className="flex items-center justify-between mb-4">

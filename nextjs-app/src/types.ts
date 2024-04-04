@@ -32,15 +32,3 @@ export interface Wishlist {
   createdAt: Date;
   updatedAt: Date;
 }
-
-export interface Login {
-  email: string;
-  password: string;
-}
-
-export interface Register {
-  name: string;
-  username: string;
-  email: string;
-  password: string;
-}
