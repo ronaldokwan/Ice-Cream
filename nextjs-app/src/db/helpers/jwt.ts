@@ -1,10 +1,16 @@
-import jwt from "jsonwebtoken";
+import jwt, { JwtPayload } from "jsonwebtoken";
+import * as jose from "jose";
+
 const secret = process.env.JWT_SECRET as string;
 
-function signToken(payload: object) {
+export const createToken = (payload: JwtPayload) => {
   return jwt.sign(payload, secret);
-}
-function verifyToken(token: string) {
+};
+export const readPayload = (token: string) => {
   return jwt.verify(token, secret);
-}
-export { signToken, verifyToken };
+};
+export const readPayloadJose = async <T>(token: string) => {
+  const encodeSecret = new TextEncoder().encode(secret);
+  const result = await jose.jwtVerify<T>(token, encodeSecret);
+  return result.payload;
+};

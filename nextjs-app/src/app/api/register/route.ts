@@ -1,5 +1,6 @@
 import User from "@/db/models/user";
 import { z } from "zod";
+import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
@@ -22,23 +23,23 @@ export async function POST(request: Request) {
       throw new Error("Username or email already exists");
     }
     const userAdded = await User.register(name, username, email, password);
-    return Response.json(
+    return NextResponse.json(
       { data: userAdded, message: "POST register success" },
       { status: 201 }
     );
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return Response.json(
+      return NextResponse.json(
         { error: error.issues[0].message, message: "POST register failed" },
         { status: 400 }
       );
     } else if (error instanceof Error) {
-      return Response.json(
+      return NextResponse.json(
         { error: error.message, message: "POST register failed" },
         { status: 400 }
       );
     } else {
-      return Response.json(
+      return NextResponse.json(
         { error, message: "Internal Server Error" },
         { status: 500 }
       );

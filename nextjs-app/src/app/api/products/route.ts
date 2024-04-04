@@ -1,6 +1,6 @@
 import Products from "@/db/models/products";
 
-export default async function GET() {
+export async function GET() {
   const data = await Products.findAll();
 
   return Response.json(

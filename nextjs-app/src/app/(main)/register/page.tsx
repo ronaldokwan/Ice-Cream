@@ -9,7 +9,7 @@ export default function Register() {
     const username = formData.get("username");
     const email = formData.get("email");
     const password = formData.get("password");
-    const res = await fetch("http://localhost:3000/api/register", {
+    const res = await fetch(`${process.env.URL}/api/register`, {
       cache: "no-store",
       method: "POST",
       headers: {
@@ -17,9 +17,9 @@ export default function Register() {
       },
       body: JSON.stringify({ name, username, email, password }),
     });
-    // const result = await res.json();
+    const result = await res.json();
     if (!res.ok) {
-      return redirect("/register?error=");
+      return redirect("/register?error=" + result.error);
     }
     return redirect("/login");
   }

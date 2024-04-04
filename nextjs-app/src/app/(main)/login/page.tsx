@@ -1,13 +1,35 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
+import { cookies } from "next/headers";
 
 export default function Login() {
+  async function loginAction(formData: FormData) {
+    "use server";
+
+    const email = formData.get("email");
+    const password = formData.get("password");
+    const res = await fetch(`${process.env.URL}/api/login`, {
+      cache: "no-store",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    });
+    const result = await res.json();
+    if (!res.ok) {
+      return redirect("/login?error=" + result.error);
+    }
+    cookies().set("Authorization", `Bearer ${result.data.token}`);
+    return redirect("/");
+  }
   return (
     <div className="min-h-screen flex items-center justify-center w-full dark:bg-gray-950">
       <div className="bg-white dark:bg-gray-900 shadow-md rounded-lg px-8 py-6 max-w-md">
         <h1 className="text-2xl font-bold text-center mb-4 dark:text-gray-200">
           Welcome Back!
         </h1>
-        <form action="#">
+        <form action={loginAction}>
           <div className="mb-4">
             <label
               className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
@@ -21,6 +43,7 @@ export default function Login() {
               placeholder="your@email.com"
               required
               type="email"
+              name="email"
             />
           </div>
           <div className="mb-4">
@@ -36,6 +59,7 @@ export default function Login() {
               placeholder="Enter your password"
               required
               type="password"
+              name="password"
             />
           </div>
           <div className="flex items-center justify-between mb-4">
