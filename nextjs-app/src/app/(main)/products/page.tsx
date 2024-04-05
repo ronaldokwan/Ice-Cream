@@ -18,7 +18,7 @@ const ProductsPage = () => {
   const fetchProducts = async () => {
     setLoading(true);
     const res = await getProduct();
-    setProducts((prevProducts: Product[]) => [...prevProducts, ...res.data]);
+    setProducts(res.data);
     setHasMore(res.data.length > 0);
     setLoading(false);
   };
@@ -37,10 +37,10 @@ const ProductsPage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8 text-center">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        <h1 className="text-4xl font-bold text-white mb-4">
           Welcome to Our Store
         </h1>
-        <p className="text-gray-600 mb-8">Find the perfect products for you</p>
+        <p className="text-white mb-8">Find the perfect products for you</p>
         <input
           type="text"
           placeholder="Search products..."

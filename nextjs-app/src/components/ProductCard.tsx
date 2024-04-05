@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Product } from "@/types";
+import Link from "next/link";
 
 interface ProductCardProps {
   product: Product;
@@ -15,16 +18,33 @@ const ProductCard = ({ product }: ProductCardProps) => {
     }
   };
 
+  const handleAddToWishlist = async () => {
+    try {
+      await fetch("/api/wishlist", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ productId: product._id }),
+      });
+      console.log("success");
+    } catch (error) {
+      console.error("Error adding product to wishlist:", error);
+    }
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
       {isValidURL(product.thumbnail) && (
         <div className="relative h-64 overflow-hidden">
-          <Image
-            src={product.thumbnail}
-            alt={product.name}
-            fill
-            className="object-cover"
-          />
+          <Link href={`/products/${product.slug}`}>
+            <Image
+              src={product.thumbnail}
+              alt={product.name}
+              fill
+              className="object-cover"
+            />
+          </Link>
         </div>
       )}
       <div className="p-4">
@@ -34,7 +54,11 @@ const ProductCard = ({ product }: ProductCardProps) => {
           ${product.price.toLocaleString()}
         </p>
         <div className="mt-4">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <button
+            className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
+            }`}
+            onClick={handleAddToWishlist}
+          >
             Add to Wishlist
           </button>
         </div>

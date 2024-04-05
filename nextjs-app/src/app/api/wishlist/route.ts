@@ -1,6 +1,7 @@
 import Wishlist from "@/db/models/wishlist";
 import { NextResponse } from "next/server";
 import { ObjectId } from "mongodb";
+
 export async function POST(request: Request) {
   try {
     const body = await request.json();
@@ -11,8 +12,8 @@ export async function POST(request: Request) {
     }
 
     const wishlist = await Wishlist.create({
-      userId: new ObjectId(userId),
-      productId: body.productId,
+      userId: new ObjectId(String(userId)),
+      productId: new ObjectId(String(body.productId)),
       createdAt: new Date(),
       updatedAt: new Date(),
     });

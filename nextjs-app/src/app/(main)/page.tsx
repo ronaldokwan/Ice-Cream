@@ -1,119 +1,25 @@
+"use client";
+
 import { Product } from "@/types";
 import ProductCard from "@/components/ProductCard";
-import { ObjectId } from "mongodb";
 import Link from "next/link";
+import { getProduct } from "@/actions/products";
+import { useEffect, useState } from "react";
 
-export default async function Home() {
-  const products: Product[] = [
-    {
-      _id: new ObjectId(),
-      name: "Vanilla Bean",
-      slug: "vanilla-bean",
-      description:
-        "A classic and creamy vanilla ice cream made with real vanilla beans.",
-      excerpt: "A classic vanilla ice cream made with real vanilla beans.",
-      price: 3.99,
-      tags: ["classic", "vanilla", "creamy"],
-      thumbnail:
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
-      images: [
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920",
-      ],
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    },
-    {
-      _id: new ObjectId(),
-      name: "Chocolate Fudge Brownie",
-      slug: "chocolate-fudge-brownie",
-      description: "Rich chocolate ice cream loaded with fudge brownie chunks.",
-      excerpt: "Chocolate ice cream with fudge brownie chunks.",
-      price: 4.49,
-      tags: ["chocolate", "brownie", "fudge"],
-      thumbnail:
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
-      images: [
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920",
-      ],
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    },
-    {
-      _id: new ObjectId(),
-      name: "Strawberry Cheesecake",
-      slug: "strawberry-cheesecake",
-      description:
-        "Strawberry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-      excerpt:
-        "Strawberry ice cream with cheesecake pieces and graham cracker crunch.",
-      price: 4.99,
-      tags: ["strawberry", "cheesecake", "graham cracker"],
-      thumbnail:
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
-      images: [
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920",
-      ],
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    },
-    {
-      _id: new ObjectId(),
-      name: "Vanilla Bean",
-      slug: "vanilla-bean",
-      description:
-        "A classic and creamy vanilla ice cream made with real vanilla beans.",
-      excerpt: "A classic vanilla ice cream made with real vanilla beans.",
-      price: 3.99,
-      tags: ["classic", "vanilla", "creamy"],
-      thumbnail:
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
-      images: [
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920",
-      ],
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    },
-    {
-      _id: new ObjectId(),
-      name: "Chocolate Fudge Brownie",
-      slug: "chocolate-fudge-brownie",
-      description: "Rich chocolate ice cream loaded with fudge brownie chunks.",
-      excerpt: "Chocolate ice cream with fudge brownie chunks.",
-      price: 4.49,
-      tags: ["chocolate", "brownie", "fudge"],
-      thumbnail:
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
-      images: [
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920",
-      ],
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    },
-    {
-      _id: new ObjectId(),
-      name: "Strawberry Cheesecake",
-      slug: "strawberry-cheesecake",
-      description:
-        "Strawberry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-      excerpt:
-        "Strawberry ice cream with cheesecake pieces and graham cracker crunch.",
-      price: 4.99,
-      tags: ["strawberry", "cheesecake", "graham cracker"],
-      thumbnail:
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
-      images: [
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
-        "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920",
-      ],
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    },
-  ];
+export default function Home() {
+  const [products, setProducts] = useState<Product[]>([]);
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  const fetchProducts = async () => {
+    const res = await getProduct();
+    const filteredProducts = res.data.filter(
+      (_: number, index: number) => index >= 0 && index <= 5
+    );
+    setProducts(filteredProducts);
+  };
 
   return (
     <div className="container mx-auto px-4 py-8">
