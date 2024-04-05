@@ -5,7 +5,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 export async function getProduct() {
-  const res = await fetch(`${process.env.URL}/api/products`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`, {
     cache: "no-store",
   });
   if (!res.ok) {
@@ -15,7 +15,7 @@ export async function getProduct() {
 }
 
 export async function createProduct(product: Product) {
-  const res = await fetch(`${process.env.URL}/api/products`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -29,8 +29,16 @@ export async function createProduct(product: Product) {
 }
 
 export async function deleteProduct(id: string) {
-  const res = await fetch(`${process.env.URL}/products/${id}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/products/${id}`, {
     method: "DELETE",
   });
   revalidatePath("/products");
 }
+
+// export async function getProductById(id?: string): Promise<Product> {
+//   const res = await fetch(
+//     `${process.env.NEXT_PUBLIC_URL}/products/${id || ""}`
+//   );
+//   const data = await res.json();
+//   return data;
+// }

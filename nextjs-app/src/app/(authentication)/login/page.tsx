@@ -8,7 +8,7 @@ export default function Login() {
 
     const email = formData.get("email");
     const password = formData.get("password");
-    const res = await fetch(`${process.env.URL}/api/login`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/login`, {
       cache: "no-store",
       method: "POST",
       headers: {

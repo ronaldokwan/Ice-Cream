@@ -8,7 +8,7 @@ export default function Page() {
 
   useEffect(() => {
     async function fetchWishlist() {
-      const res = await fetch(`${process.env.URL}/api/wishlist`);
+      const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/wishlist`);
       const result = await res.json();
       if (res.ok) {
         setWishlist(result);
