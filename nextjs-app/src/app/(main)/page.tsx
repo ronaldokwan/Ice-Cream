@@ -1,25 +1,13 @@
-"use client";
-
 import { Product } from "@/types";
 import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
 import { getProduct } from "@/actions/products";
-import { useEffect, useState } from "react";
 
-export default function Home() {
-  const [products, setProducts] = useState<Product[]>([]);
-
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-
-  const fetchProducts = async () => {
-    const res = await getProduct();
-    const filteredProducts = res.data.filter(
-      (_: number, index: number) => index >= 0 && index <= 5
-    );
-    setProducts(filteredProducts);
-  };
+export default async function Home() {
+  const res = await getProduct();
+  const products = res.data.filter(
+    (_: number, index: number) => index >= 0 && index <= 5
+  );
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -53,7 +41,7 @@ export default function Home() {
 
       {/* Product Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-        {products?.map((product: Product, index) => (
+        {products?.map((product: Product, index: number) => (
           <ProductCard key={index} product={product} />
         ))}
       </div>

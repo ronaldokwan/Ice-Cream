@@ -9,6 +9,12 @@ class Products {
     const products = await this.productsCollection().find().toArray();
     return products;
   }
+  static async findSlug(slug: string) {
+    const products = await this.productsCollection().findOne({
+      slug,
+    });
+    return products;
+  }
 }
 
 export default Products;

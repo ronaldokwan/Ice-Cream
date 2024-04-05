@@ -1,8 +1,8 @@
 "use server";
 
-import { Product } from "@/types";
-import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
+// import { Product } from "@/types";
+// import { revalidatePath } from "next/cache";
+// import { redirect } from "next/navigation";
 
 export async function getProduct() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`, {
@@ -14,31 +14,23 @@ export async function getProduct() {
   return await res.json();
 }
 
-export async function createProduct(product: Product) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(product),
-  });
-  if (res.ok) {
-    revalidatePath("/products");
-    redirect("/products");
-  }
-}
+// export async function createProduct(product: Product) {
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/products`, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(product),
+//   });
+//   if (res.ok) {
+//     revalidatePath("/products");
+//     redirect("/products");
+//   }
+// }
 
-export async function deleteProduct(id: string) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/products/${id}`, {
-    method: "DELETE",
-  });
-  revalidatePath("/products");
-}
-
-// export async function getProductById(id?: string): Promise<Product> {
-//   const res = await fetch(
-//     `${process.env.NEXT_PUBLIC_URL}/products/${id || ""}`
-//   );
-//   const data = await res.json();
-//   return data;
+// export async function deleteProduct(id: string) {
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/products/${id}`, {
+//     method: "DELETE",
+//   });
+//   revalidatePath("/products");
 // }

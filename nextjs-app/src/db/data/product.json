@@ -46,325 +46,266 @@
     "updatedAt": "2023-08-03T15:00:00Z"
   },
   {
-    "name": "Vanilla Bean",
-    "slug": "vanilla-bean",
-    "description": "A classic and creamy vanilla ice cream made with real vanilla beans.",
-    "excerpt": "A classic vanilla ice cream made with real vanilla beans.",
-    "price": 3.99,
-    "tags": ["classic", "vanilla", "creamy"],
+    "name": "Mint Chocolate Banana",
+    "slug": "mint-chocolate-banana",
+    "description": "Refreshing mint ice cream with chocolate bananas mixed in.",
+    "excerpt": "Mint ice cream with chocolate bananas.",
+    "price": 4.29,
+    "tags": ["mint", "chocolate", "refreshing"],
     "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
     "images": [
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
     ],
-    "createdAt": "2023-08-01T10:00:00Z",
-    "updatedAt": "2023-08-01T10:00:00Z"
+    "createdAt": "2023-08-04T09:45:00Z",
+    "updatedAt": "2023-08-04T09:45:00Z"
   },
   {
-    "name": "Chocolate Fudge Brownie",
-    "slug": "chocolate-fudge-brownie",
-    "description": "Rich chocolate ice cream loaded with fudge brownie chunks.",
-    "excerpt": "Chocolate ice cream with fudge brownie chunks.",
+    "name": "Cookies and Cream",
+    "slug": "cookies-and-cream",
+    "description": "Creamy vanilla ice cream with chocolate cookie pieces.",
+    "excerpt": "Vanilla ice cream with chocolate cookies.",
+    "price": 3.79,
+    "tags": ["vanilla", "chocolate", "cookies"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-05T14:20:00Z",
+    "updatedAt": "2023-08-05T14:20:00Z"
+  },
+  {
+    "name": "Strawberry Cheesecake",
+    "slug": "strawberry-cheesecake",
+    "description": "Creamy cheesecake ice cream with strawberry swirls and graham cracker pieces.",
+    "excerpt": "Cheesecake ice cream with strawberry swirls and graham crackers.",
+    "price": 4.79,
+    "tags": ["strawberry", "cheesecake", "graham cracker"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-06T11:10:00Z",
+    "updatedAt": "2023-08-06T11:10:00Z"
+  },
+  {
+    "name": "Rocky Road",
+    "slug": "rocky-road",
+    "description": "Decadent chocolate ice cream with marshmallows, almonds, and chocolate chunks.",
+    "excerpt": "Chocolate ice cream with marshmallows, almonds, and chocolate chunks.",
+    "price": 4.99,
+    "tags": ["chocolate", "marshmallow", "almond"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-07T13:45:00Z",
+    "updatedAt": "2023-08-07T13:45:00Z"
+  },
+  {
+    "name": "Pistachio Almond",
+    "slug": "pistachio-almond",
+    "description": "Creamy pistachio ice cream with roasted almonds mixed in.",
+    "excerpt": "Pistachio ice cream with roasted almonds.",
     "price": 4.49,
-    "tags": ["chocolate", "brownie", "fudge"],
+    "tags": ["pistachio", "almond", "creamy"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-08T10:20:00Z",
+    "updatedAt": "2023-08-08T10:20:00Z"
+  },
+  {
+    "name": "Salted Caramel",
+    "slug": "salted-caramel",
+    "description": "Smooth caramel ice cream with a touch of sea salt for a perfect balance of sweet and salty.",
+    "excerpt": "Caramel ice cream with sea salt.",
+    "price": 5.29,
+    "tags": ["caramel", "sea salt", "smooth"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-09T15:30:00Z",
+    "updatedAt": "2023-08-09T15:30:00Z"
+  },
+
+  {
+    "name": "Strawberry",
+    "slug": "strawberry",
+    "description": "Fresh and fruity strawberry ice cream made with real strawberries.",
+    "excerpt": "Fresh strawberry ice cream with real strawberries.",
+    "price": 4.19,
+    "tags": ["strawberry", "fruity", "fresh"],
     "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
     "images": [
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920"
     ],
 
-    "createdAt": "2023-08-02T12:30:00Z",
-    "updatedAt": "2023-08-02T12:30:00Z"
+    "createdAt": "2023-08-10T09:15:00Z",
+    "updatedAt": "2023-08-10T09:15:00Z"
   },
   {
-    "name": "Cherry Cheesecake",
-    "slug": "cherry-cheesecake",
-    "description": "Cherry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-    "excerpt": "Cherry ice cream with cheesecake pieces and graham cracker crunch.",
-    "price": 4.99,
-    "tags": ["cherry", "cheesecake", "graham cracker"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-03T15:00:00Z",
-    "updatedAt": "2023-08-03T15:00:00Z"
-  },
-  {
-    "name": "Vanilla Bean",
-    "slug": "vanilla-bean",
-    "description": "A classic and creamy vanilla ice cream made with real vanilla beans.",
-    "excerpt": "A classic vanilla ice cream made with real vanilla beans.",
-    "price": 3.99,
-    "tags": ["classic", "vanilla", "creamy"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-01T10:00:00Z",
-    "updatedAt": "2023-08-01T10:00:00Z"
-  },
-  {
-    "name": "Chocolate Fudge Brownie",
-    "slug": "chocolate-fudge-brownie",
-    "description": "Rich chocolate ice cream loaded with fudge brownie chunks.",
-    "excerpt": "Chocolate ice cream with fudge brownie chunks.",
-    "price": 4.49,
-    "tags": ["chocolate", "brownie", "fudge"],
+    "name": "Peanut Butter Cup",
+    "slug": "peanut-butter-cup",
+    "description": "Creamy peanut butter ice cream with swirls of chocolate peanut butter cups.",
+    "excerpt": "Peanut butter ice cream with chocolate peanut butter cups.",
+    "price": 4.69,
+    "tags": ["peanut butter", "chocolate", "creamy"],
     "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
     "images": [
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920"
     ],
 
-    "createdAt": "2023-08-02T12:30:00Z",
-    "updatedAt": "2023-08-02T12:30:00Z"
+    "createdAt": "2023-08-11T12:00:00Z",
+    "updatedAt": "2023-08-11T12:00:00Z"
   },
   {
-    "name": "Cherry Cheesecake",
-    "slug": "cherry-cheesecake",
-    "description": "Cherry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-    "excerpt": "Cherry ice cream with cheesecake pieces and graham cracker crunch.",
-    "price": 4.99,
-    "tags": ["cherry", "cheesecake", "graham cracker"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-03T15:00:00Z",
-    "updatedAt": "2023-08-03T15:00:00Z"
-  },
-  {
-    "name": "Vanilla Bean",
-    "slug": "vanilla-bean",
-    "description": "A classic and creamy vanilla ice cream made with real vanilla beans.",
-    "excerpt": "A classic vanilla ice cream made with real vanilla beans.",
-    "price": 3.99,
-    "tags": ["classic", "vanilla", "creamy"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-01T10:00:00Z",
-    "updatedAt": "2023-08-01T10:00:00Z"
-  },
-  {
-    "name": "Chocolate Fudge Brownie",
-    "slug": "chocolate-fudge-brownie",
-    "description": "Rich chocolate ice cream loaded with fudge brownie chunks.",
-    "excerpt": "Chocolate ice cream with fudge brownie chunks.",
-    "price": 4.49,
-    "tags": ["chocolate", "brownie", "fudge"],
+    "name": "Caramel Swirl",
+    "slug": "caramel-swirl",
+    "description": "Rich caramel ice cream with swirls of gooey caramel throughout.",
+    "excerpt": "Caramel ice cream with gooey caramel swirls.",
+    "price": 4.39,
+    "tags": ["caramel", "gooey", "rich"],
     "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
     "images": [
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920"
     ],
 
-    "createdAt": "2023-08-02T12:30:00Z",
-    "updatedAt": "2023-08-02T12:30:00Z"
+    "createdAt": "2023-08-12T14:45:00Z",
+    "updatedAt": "2023-08-12T14:45:00Z"
   },
   {
-    "name": "Cherry Cheesecake",
-    "slug": "cherry-cheesecake",
-    "description": "Cherry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-    "excerpt": "Cherry ice cream with cheesecake pieces and graham cracker crunch.",
-    "price": 4.99,
-    "tags": ["cherry", "cheesecake", "graham cracker"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-03T15:00:00Z",
-    "updatedAt": "2023-08-03T15:00:00Z"
-  },
-  {
-    "name": "Vanilla Bean",
-    "slug": "vanilla-bean",
-    "description": "A classic and creamy vanilla ice cream made with real vanilla beans.",
-    "excerpt": "A classic vanilla ice cream made with real vanilla beans.",
-    "price": 3.99,
-    "tags": ["classic", "vanilla", "creamy"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-01T10:00:00Z",
-    "updatedAt": "2023-08-01T10:00:00Z"
-  },
-  {
-    "name": "Chocolate Fudge Brownie",
-    "slug": "chocolate-fudge-brownie",
-    "description": "Rich chocolate ice cream loaded with fudge brownie chunks.",
-    "excerpt": "Chocolate ice cream with fudge brownie chunks.",
-    "price": 4.49,
-    "tags": ["chocolate", "brownie", "fudge"],
+    "name": "Coconut Almond Bliss",
+    "slug": "coconut-almond-bliss",
+    "description": "Creamy coconut ice cream with toasted almond pieces for a delightful tropical treat.",
+    "excerpt": "Coconut ice cream with toasted almonds.",
+    "price": 4.79,
+    "tags": ["coconut", "almond", "tropical"],
     "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
     "images": [
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920"
     ],
 
-    "createdAt": "2023-08-02T12:30:00Z",
-    "updatedAt": "2023-08-02T12:30:00Z"
+    "createdAt": "2023-08-13T11:30:00Z",
+    "updatedAt": "2023-08-13T11:30:00Z"
   },
   {
-    "name": "Cherry Cheesecake",
-    "slug": "cherry-cheesecake",
-    "description": "Cherry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-    "excerpt": "Cherry ice cream with cheesecake pieces and graham cracker crunch.",
-    "price": 4.99,
-    "tags": ["cherry", "cheesecake", "graham cracker"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-03T15:00:00Z",
-    "updatedAt": "2023-08-03T15:00:00Z"
-  },
-  {
-    "name": "Vanilla Bean",
-    "slug": "vanilla-bean",
-    "description": "A classic and creamy vanilla ice cream made with real vanilla beans.",
-    "excerpt": "A classic vanilla ice cream made with real vanilla beans.",
-    "price": 3.99,
-    "tags": ["classic", "vanilla", "creamy"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-01T10:00:00Z",
-    "updatedAt": "2023-08-01T10:00:00Z"
-  },
-  {
-    "name": "Chocolate Fudge Brownie",
-    "slug": "chocolate-fudge-brownie",
-    "description": "Rich chocolate ice cream loaded with fudge brownie chunks.",
-    "excerpt": "Chocolate ice cream with fudge brownie chunks.",
-    "price": 4.49,
-    "tags": ["chocolate", "brownie", "fudge"],
+    "name": "Mango Tango",
+    "slug": "mango-tango",
+    "description": "Exotic mango ice cream with a hint of tangy citrus for a refreshing tropical flavor.",
+    "excerpt": "Mango ice cream with tangy citrus.",
+    "price": 4.89,
+    "tags": ["mango", "tropical", "exotic"],
     "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
     "images": [
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920"
     ],
 
-    "createdAt": "2023-08-02T12:30:00Z",
-    "updatedAt": "2023-08-02T12:30:00Z"
+    "createdAt": "2023-08-14T15:20:00Z",
+    "updatedAt": "2023-08-14T15:20:00Z"
   },
   {
-    "name": "Cherry Cheesecake",
-    "slug": "cherry-cheesecake",
-    "description": "Cherry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-    "excerpt": "Cherry ice cream with cheesecake pieces and graham cracker crunch.",
-    "price": 4.99,
-    "tags": ["cherry", "cheesecake", "graham cracker"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-03T15:00:00Z",
-    "updatedAt": "2023-08-03T15:00:00Z"
-  },
-  {
-    "name": "Vanilla Bean",
-    "slug": "vanilla-bean",
-    "description": "A classic and creamy vanilla ice cream made with real vanilla beans.",
-    "excerpt": "A classic vanilla ice cream made with real vanilla beans.",
-    "price": 3.99,
-    "tags": ["classic", "vanilla", "creamy"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-01T10:00:00Z",
-    "updatedAt": "2023-08-01T10:00:00Z"
-  },
-  {
-    "name": "Chocolate Fudge Brownie",
-    "slug": "chocolate-fudge-brownie",
-    "description": "Rich chocolate ice cream loaded with fudge brownie chunks.",
-    "excerpt": "Chocolate ice cream with fudge brownie chunks.",
-    "price": 4.49,
-    "tags": ["chocolate", "brownie", "fudge"],
+    "name": "Maple Walnut",
+    "slug": "maple-walnut",
+    "description": "Rich maple ice cream with crunchy walnut pieces for a deliciously sweet and nutty flavor.",
+    "excerpt": "Maple ice cream with crunchy walnuts.",
+    "price": 4.59,
+    "tags": ["maple", "walnut", "sweet"],
     "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
     "images": [
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920"
     ],
 
-    "createdAt": "2023-08-02T12:30:00Z",
-    "updatedAt": "2023-08-02T12:30:00Z"
+    "createdAt": "2023-08-15T10:50:00Z",
+    "updatedAt": "2023-08-15T10:50:00Z"
   },
-  {
-    "name": "Cherry Cheesecake",
-    "slug": "cherry-cheesecake",
-    "description": "Cherry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-    "excerpt": "Cherry ice cream with cheesecake pieces and graham cracker crunch.",
-    "price": 4.99,
-    "tags": ["cherry", "cheesecake", "graham cracker"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-03T15:00:00Z",
-    "updatedAt": "2023-08-03T15:00:00Z"
-  },
-  {
-    "name": "Vanilla Bean",
-    "slug": "vanilla-bean",
-    "description": "A classic and creamy vanilla ice cream made with real vanilla beans.",
-    "excerpt": "A classic vanilla ice cream made with real vanilla beans.",
-    "price": 3.99,
-    "tags": ["classic", "vanilla", "creamy"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/web_Tower_Vanilla_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Enviro_8_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Vanilla%20Ice%20Cream/873564_Vanilla_Hero_1920x1920.jpg?imwidth=1920"
-    ],
-    "createdAt": "2023-08-01T10:00:00Z",
-    "updatedAt": "2023-08-01T10:00:00Z"
-  },
-  {
-    "name": "Chocolate Fudge Brownie",
-    "slug": "chocolate-fudge-brownie",
-    "description": "Rich chocolate ice cream loaded with fudge brownie chunks.",
-    "excerpt": "Chocolate ice cream with fudge brownie chunks.",
-    "price": 4.49,
-    "tags": ["chocolate", "brownie", "fudge"],
-    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/web_Tower_ChocolateFudgeBrownie_RGB_HR2_60M.png",
-    "images": [
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Enviro_1920x1920.jpg?imwidth=1920",
-      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Chocolate%20Fudge%20Brownie%20Ice%20Cream/873564_ChocolateFudgeBrownie_Hero_1920x1920.jpg?imwidth=1920"
-    ],
 
-    "createdAt": "2023-08-02T12:30:00Z",
-    "updatedAt": "2023-08-02T12:30:00Z"
-  },
   {
-    "name": "Cherry Cheesecake",
-    "slug": "cherry-cheesecake",
-    "description": "Cherry ice cream swirled with cheesecake pieces and a graham cracker crunch.",
-    "excerpt": "Cherry ice cream with cheesecake pieces and graham cracker crunch.",
-    "price": 4.99,
-    "tags": ["cherry", "cheesecake", "graham cracker"],
+    "name": "Cookies 'n Cream",
+    "slug": "cookies-n-cream",
+    "description": "Smooth vanilla ice cream with chocolate cookie pieces mixed in for a classic treat.",
+    "excerpt": "Vanilla ice cream with chocolate cookie pieces.",
+    "price": 4.29,
+    "tags": ["vanilla", "chocolate", "cookie"],
     "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
     "images": [
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
       "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
     ],
-    "createdAt": "2023-08-03T15:00:00Z",
-    "updatedAt": "2023-08-03T15:00:00Z"
+    "createdAt": "2023-08-16T14:15:00Z",
+    "updatedAt": "2023-08-16T14:15:00Z"
+  },
+  {
+    "name": "Mint Chocolate Chip",
+    "slug": "mint-chocolate-chip",
+    "description": "Refreshing mint ice cream with chocolate chips for a cool and indulgent experience.",
+    "excerpt": "Mint ice cream with chocolate chips.",
+    "price": 4.49,
+    "tags": ["mint", "chocolate", "refreshing"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-17T11:30:00Z",
+    "updatedAt": "2023-08-17T11:30:00Z"
+  },
+  {
+    "name": "Peach Sorbet",
+    "slug": "peach-sorbet",
+    "description": "Smooth and fruity peach sorbet made with ripe peaches for a refreshing and tangy dessert.",
+    "excerpt": "Peach sorbet made with ripe peaches.",
+    "price": 4.99,
+    "tags": ["peach", "sorbet", "fruity"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-18T09:45:00Z",
+    "updatedAt": "2023-08-18T09:45:00Z"
+  },
+  {
+    "name": "Banana Split",
+    "slug": "banana-split",
+    "description": "Creamy banana ice cream with swirls of chocolate syrup, pineapple pieces, and cherry chunks for a classic sundae experience.",
+    "excerpt": "Banana ice cream with chocolate syrup, pineapple, and cherry.",
+    "price": 4.99,
+    "tags": ["banana", "chocolate", "pineapple"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-20T14:30:00Z",
+    "updatedAt": "2023-08-20T14:30:00Z"
+  },
+  {
+    "name": "Pistachio Dream",
+    "slug": "pistachio-dream",
+    "description": "Smooth pistachio ice cream with roasted pistachio pieces for a nutty and creamy flavor.",
+    "excerpt": "Pistachio ice cream with roasted pistachio pieces.",
+    "price": 4.69,
+    "tags": ["pistachio", "nutty", "creamy"],
+    "thumbnail": "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/web_Tower_CherryGarcia_RGB_HR2_60M.png",
+    "images": [
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Enviro_1920x1920.jpg?imwidth=1920",
+      "https://www.benjerry.com/files/live/sites/systemsite/files/US%20and%20Global%20Assets/Flavors/Product%20Assets/US/Cherry%20Garcia%20Ice%20Cream/873564_CherryGarcia_Hero_1920x1920.jpg?imwidth=1920"
+    ],
+    "createdAt": "2023-08-21T09:45:00Z",
+    "updatedAt": "2023-08-21T09:45:00Z"
   }
 ]
