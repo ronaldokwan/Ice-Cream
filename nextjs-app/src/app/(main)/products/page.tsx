@@ -18,7 +18,7 @@ const ProductsPage = () => {
   const fetchProducts = async () => {
     setLoading(true);
     const res = await getProduct();
-    setProducts(res.data);
+    setProducts((prevProducts: Product[]) => [...prevProducts, ...res.data]);
     setHasMore(res.data.length > 0);
     setLoading(false);
   };
