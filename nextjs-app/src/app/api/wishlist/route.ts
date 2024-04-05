@@ -45,3 +45,25 @@ export async function GET(request: Request) {
     );
   }
 }
+
+export async function DELETE(request: Request) {
+  try {
+    const { id } = await request.json();
+    const userId = request.headers.get("x-user-id");
+    if (!userId) {
+      throw new Error("User ID is missing.");
+    }
+
+    const wishlist = await Wishlist.delete(String(id));
+
+    return NextResponse.json(
+      { data: wishlist, message: "POST wishlist success" },
+      { status: 201 }
+    );
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
+  }
+}

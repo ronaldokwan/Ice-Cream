@@ -21,15 +21,34 @@ class Wishlist {
     };
   }
   static async findAll(userId: string) {
-    const result = this.wishlistCollection()
-      .find({
-        userId: new ObjectId(userId),
-      })
+    const result = await this.wishlistCollection()
+      .aggregate([
+        {
+          $match: {
+            userId: new ObjectId(userId),
+          },
+        },
+        {
+          $lookup: {
+            from: "Products",
+            localField: "productId",
+            foreignField: "_id",
+            as: "productsDetail",
+          },
+        },
+      ])
       .toArray();
+
     return result;
   }
   static async findById(id: string) {
     const result = await this.wishlistCollection().findOne({
+      _id: new ObjectId(id),
+    });
+    return result;
+  }
+  static async delete(id: string) {
+    const result = await this.wishlistCollection().deleteOne({
       _id: new ObjectId(id),
     });
     return result;

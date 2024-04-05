@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Product } from "@/types";
 import Link from "next/link";
+import Swal from "sweetalert2";
 
 interface ProductCardProps {
   product: Product;
@@ -20,14 +21,30 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
   const handleAddToWishlist = async () => {
     try {
-      await fetch("/api/wishlist", {
+      const test = await fetch("/api/wishlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ productId: product._id }),
       });
-      console.log("success");
+      if (test.ok) {
+        Swal.fire({
+          icon: "success",
+          title: "Added to Wishlist",
+          text: "Product has been added to your wishlist",
+          showConfirmButton: false,
+          timer: 1000,
+        });
+      }
+
+      if (!test.ok) {
+        Swal.fire({
+          icon: "error",
+          title: "failed to add to wishlist",
+          text: "user must be logged in to add to wishlist",
+        });
+      }
     } catch (error) {
       console.error("Error adding product to wishlist:", error);
     }
