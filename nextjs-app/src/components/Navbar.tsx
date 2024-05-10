@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { cookies } from "next/headers";
-import LogoutButton from "./LogoutButton";
 import Image from "next/image";
+import Link from "next/link";
+import LogoutButton from "./LogoutButton";
 
 const Navigation = () => {
   const auth = cookies().get("Authorization")?.value;
@@ -21,7 +21,7 @@ const Navigation = () => {
               Home
             </Link>
           </div>
-          <div className="hidden md:block">
+          <div>
             <div className="ml-10 flex items-baseline space-x-4">
               <Link
                 href="/products"
