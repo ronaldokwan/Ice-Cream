@@ -1,42 +1,54 @@
+Sure! Here's the English translation of your text:
+
+---
+
 # My eCommerce App
 
-Live Demo : https://new-next-gray.vercel.app/
+**Live Demo**: [https://new-next-gray.vercel.app/](https://new-next-gray.vercel.app/)
 
 ![Ice Cream](./images/ice-cream.png)
 
-## Ringkasan
+## Summary
 
-My eCommerce App adalah sebuah web aplikasi yang dibangun mengunakan Typescript , framework NEXT.js dan database MongoDB, jadi kerjakan dengan baik sebagai bekal portofolio kamu.
+**My eCommerce App** is a web application built using **TypeScript**, the **NEXT.js framework**, and a **MongoDB database**, so make sure to do a good job as this will serve as a portfolio piece.
 
-Pada challenge ini, kamu diminta untuk membuat aplikasi client-server dengan detail sebagai berikut:
+In this challenge, you are required to build a **client-server application** with the following details:
 
-### Halaman
+### Pages
 
-- [x] Halaman Register
-- [x] Halaman Login
-- [x] Halaman Home
-  - [x] Banner Promo
-  - [x] Detail info Ecommerce
-  - [x] Featured Product (5-10 product) + “see-all”
-- [x] Halaman Product
-- [x] List Product
-  - [x] Fitur Search
-  - [x] Fitur Pagination (menggunakan infinite scroll)
-  - [x] Fitur Add to wishlist
-- [x] Halaman Detail Product
-  - [x] Fitur Add to wishlist
-  - [x] Implementasi Meta Tag di Head sesuai detail product
-- [x] Halaman Wishlist Product
-  - [x] List Wishlist
-  - [x] Fitur Remove Wishlist
+* [x] Register Page
+* [x] Login Page
+* [x] Home Page
 
-### Fitur
+  * [x] Promo Banner
+  * [x] Ecommerce Info Details
+  * [x] Featured Products (5–10 products) + “see all”
+* [x] Product Page
+* [x] Product List
 
-- [x] Fitur register
-- [x] Fitur login
-- [x] Fitur show list product
-- [x] Fitur show detail product
-- [x] Fitur add to wishlist
-- [x] Fitur remove wishlist
-- [x] Fitur search product berdasarkan nama (implement menerapkan debounce)
-- [x] Fitur pagination (implement infinite scroll)
+  * [x] Search Feature
+  * [x] Pagination Feature (using infinite scroll)
+  * [x] Add to Wishlist Feature
+* [x] Product Detail Page
+
+  * [x] Add to Wishlist Feature
+  * [x] Meta Tag Implementation in Head according to product details
+* [x] Wishlist Page
+
+  * [x] Wishlist List
+  * [x] Remove from Wishlist Feature
+
+### Features
+
+* [x] Register Feature
+* [x] Login Feature
+* [x] Show Product List Feature
+* [x] Show Product Detail Feature
+* [x] Add to Wishlist Feature
+* [x] Remove from Wishlist Feature
+* [x] Product Search by Name Feature (implemented with debounce)
+* [x] Pagination Feature (implemented with infinite scroll)
+
+---
+
+Let me know if you want to improve or polish the phrasing for your portfolio!
