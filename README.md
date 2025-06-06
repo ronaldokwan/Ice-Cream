@@ -1,7 +1,3 @@
-Sure! Here's the English translation of your text:
-
----
-
 # My eCommerce App
 
 **Live Demo**: [https://new-next-gray.vercel.app/](https://new-next-gray.vercel.app/)
@@ -48,7 +44,3 @@ In this challenge, you are required to build a **client-server application** wit
 * [x] Remove from Wishlist Feature
 * [x] Product Search by Name Feature (implemented with debounce)
 * [x] Pagination Feature (implemented with infinite scroll)
-
----
-
-Let me know if you want to improve or polish the phrasing for your portfolio!
